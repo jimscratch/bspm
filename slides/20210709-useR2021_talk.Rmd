@@ -24,7 +24,7 @@ output:
     css: [default, metropolis, metropolis-fonts, lib/styles.css]
     nature:
       ratio: '16:9'
-      beforeInit: [lib/macros.js, lib/mermaid.min.js, lib/widget.js]
+      beforeInit: [lib/macros.js, lib/mermaid.min.js]
       highlightLines: true
       countIncrementalSlides: false
 ---
@@ -435,11 +435,11 @@ Size:
 # Thanks
 
 .pull-left[
-<blockquote class="twitter-tweet" data-dnt="true" data-theme="light"><p lang="en" dir="ltr">Just finished installing &amp; setting up <a href="https://twitter.com/fedora?ref_src=twsrc%5Etfw">@fedora</a> Kinoite (a Linux-based distro from <a href="https://twitter.com/teamsilverblue?ref_src=twsrc%5Etfw">@teamsilverblue</a> and <a href="https://twitter.com/siosm?ref_src=twsrc%5Etfw">@siosm</a>) and installed <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a>, <a href="https://twitter.com/hashtag/RStudio?src=hash&amp;ref_src=twsrc%5Etfw">#RStudio</a> and CoprManager from <a href="https://twitter.com/Enchufa2?ref_src=twsrc%5Etfw">@Enchufa2</a> on my 2015 MacBook Pro. So far, I am enjoying the best R experience I have had on a Desktop in my life! 👇 <a href="https://t.co/Dy2TEkwCuD">pic.twitter.com/Dy2TEkwCuD</a></p>&mdash; R Data Berlin (@rdataberlin) <a href="https://twitter.com/rdataberlin/status/1408379823970557954?ref_src=twsrc%5Etfw">June 25, 2021</a></blockquote>
+[![](img/tweet1.jpg)](https://twitter.com/rdataberlin/status/1408379823970557954)
 ]
 
 .pull-right[
-<blockquote class="twitter-tweet" data-dnt="true"><p lang="en" dir="ltr">Setting up <a href="https://twitter.com/hashtag/rstats?src=hash&amp;ref_src=twsrc%5Etfw">#rstats</a> on new linux laptop, and finally decided to try {bspm}.<br><br>Wow! So nice of R to take the initiative and get the necessary system libraries, and binaries if possible!<br><br>Thanks <a href="https://twitter.com/Enchufa2?ref_src=twsrc%5Etfw">@Enchufa2</a></p>&mdash; Dr. Robert M Flight, PhD (@rmflight) <a href="https://twitter.com/rmflight/status/1409684842703327234?ref_src=twsrc%5Etfw">June 29, 2021</a></blockquote>
+[![](img/tweet2.jpg)](https://twitter.com/rmflight/status/1409684842703327234)
 
 Links:
 - https://github.com/Enchufa2/cran2copr
