@@ -26,10 +26,6 @@
   background-color: #28a745;
 }
 
-.DiagrammeR > svg {
-  max-width: none !important;
-}
-
 .vcenter {
   margin: 0;
   position: absolute;
@@ -69,4 +65,14 @@
   0% { transform: scale(1); }
   50% { transform: scale(1.3); }
   100% { transform: scale(1); }
+}
+
+.fedora code {
+  background: #3c6eb411 !important;
+}
+.debian code {
+  background: #CE005611 !important;
+}
+.opensuse code {
+  background: #73BA2511 !important;
 }

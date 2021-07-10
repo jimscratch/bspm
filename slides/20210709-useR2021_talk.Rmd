@@ -458,3 +458,63 @@ class: inverse, center, middle
 </svg>
 ![:scale 20%](img/R.png)
 </div>
+
+---
+
+# Appendix: installation instructions
+
+.left-column[
+<h3 style="color:#3c6eb4">Fedora:</h3>
+<h3 style="color:#CE0056;padding-top:45px">Debian/Ubuntu:</h3>
+<h3 style="color:#73BA25;padding-top:90px">openSUSE:</h3>
+<h3 style="color:#1A292C;padding-top:125px">then...</h3>
+]
+
+.right-column[
+<div class="fedora">
+```bash
+$ sudo dnf install 'dnf-command(copr)'
+$ sudo dnf copr enable iucar/cran
+$ sudo dnf install R-CoprManager
+```
+</div>
+<div class="debian">
+```bash
+$ sudo add-apt-repository ppa:marutter/c2d4u
+$ sudo add-apt-repository ppa:edd/r-4.0
+$ sudo apt-get update
+$ sudo apt-get install r-cran-bspm
+$ echo "bspm::enable()" | sudo tee -a /etc/R/Rprofile.site
+```
+</div>
+<div class="opensuse">
+```bash
+$ sudo zypper ar -r https://download.opensuse.org/repositories/devel:/languages:/R:/patched/openSUSE_Tumbleweed/devel:languages:R:patched.repo
+$ sudo zypper ar -r https://download.opensuse.org/repositories/devel:/languages:/R:/autoCRAN/openSUSE_Tumbleweed/devel:languages:R:autoCRAN.repo
+$ sudo zypper install R-patched python3-dnf python38-dbus-python python3-gobject
+$ sudo ln -s /etc/zypp/repos.d /etc/yum.repos.d
+$ sudo Rscript -e 'install.packages("bspm", repos="https://cran.r-project.org")'
+$ echo "bspm::enable()" | sudo tee -a /usr/lib64/R/etc/Rprofile.site
+```
+</div>
+```r
+install.packages(...) # enjoy!
+```
+]
+
+---
+
+# Appendix: installation instructions
+
+.left-column[
+### Other
+]
+
+.right-column[.font120[
+### General procedure
+
+If you are trying `bspm` in another distro, or you are packaging it as a system package, please refer to the [general procedure](https://github.com/Enchufa2/bspm#general-procedure).
+
+### Containerized applications (e.g., a Docker images)
+Refer to the [`rocker/r-bspm` images](https://github.com/rocker-org/rocker/tree/master/r-bspm).
+]]
